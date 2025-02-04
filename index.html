@@ -3,20 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Days Until Exam</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-           let examDate = new Date(2025, 1, 10); // Year, Month (0-based), Day
-            let currentDate = new Date();
-            
-            let timeDiff = examDate - currentDate;
-            let daysRemaining = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-            
-            document.getElementById("display").innerText = daysRemaining > 0 ? daysRemaining + "" : "-1";
-        });
-    </script>
+    <title>Artificial Intelligence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <p id="display"></p>
+
+<header>
+    <h1>Artificial Intelligence</h1>
+</header>
+
+
+    <h2>What is AI?</h2>
+    <p>
+        Artificial Intelligence (AI) refers to the simulation of human intelligence in machines
+        that are programmed to think and learn like humans. It involves the creation of algorithms 
+        and systems that can perform tasks that typically require human intelligence, such as 
+        recognizing speech, making decisions, and translating languages.
+    </p>
+
+
+
+
+
+
+
 </body>
 </html>
