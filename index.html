@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Until Exam</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let examDate = new Date("10/02/2025"); // Set your exam date here in DD/MM/YYYY format
+            let currentDate = new Date();
+            
+            let timeDiff = examDate - currentDate;
+            let daysRemaining = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+            
+            document.getElementById("display").innerText = daysRemaining > 0 ? daysRemaining + " days remaining" : "Over";
+        });
+    </script>
+</head>
+<body>
+    <p id="display"></p>
+</body>
+</html>
